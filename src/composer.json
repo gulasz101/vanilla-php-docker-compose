@@ -1,0 +1,13 @@
+{
+    "name": "gulasz101/vanilla-php-boilerplate",
+    "description": "Simple php projects starting point.",
+    "type": "project",
+    "require": {
+        "php": "7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
