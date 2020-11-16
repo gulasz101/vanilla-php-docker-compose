@@ -1,0 +1,22 @@
+version: '3.1'
+services:
+  nginx:
+    build: docker/nginx
+    command: nginx -g "daemon off;"
+    links:
+      - php
+    ports:
+      - "80:80"
+    volumes:
+      - ./src/public:/var/www/public
+  php:
+    container_name: php
+    build: docker/php
+    volumes:
+      - ./src:/var/www
+    working_dir: /var/www
+    command: php-fpm
+    ports:
+      - "9000:9000"
+    env_file:
+      - .php.env
