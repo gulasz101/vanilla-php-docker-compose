@@ -1,2 +1,4 @@
 /.php.env
 /src/vendor/
+/src/.phpunit.cache
+/src/.phpunit.cache/*
