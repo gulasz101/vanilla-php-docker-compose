@@ -1,6 +1,6 @@
-FROM php:7.4-fpm
+FROM php:8.0-fpm
 
-RUN apt-get update && apt-get install -y \
+RUN apt update && apt install -y \
     pkg-config \
     libssl-dev \
     libmcrypt-dev \
@@ -14,12 +14,18 @@ RUN apt-get update && apt-get install -y \
     libzip-dev \
     unzip \
     mailutils \
-    mc
+    mc \
+    openssh-client \
+    gnupg \
+    gnupg2 \
+    gnupg1 \
+    nginx \
+    supervisor
 
 # Install PECL extensions
 RUN \
     pecl install xdebug \
-    docker-php-ext-enable xdebug
+    && docker-php-ext-enable xdebug
 
 # install mysql support
 RUN \
@@ -30,3 +36,8 @@ RUN \
 
 # install composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
+COPY supervisord.conf /etc/supervisor
+COPY nginx.conf /etc/nginx
+
+CMD ["/usr/bin/supervisord"]

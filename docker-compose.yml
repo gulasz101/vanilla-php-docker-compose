@@ -1,22 +1,24 @@
 version: '3.1'
 services:
-  nginx:
-    build: docker/nginx
-    command: nginx -g "daemon off;"
-    links:
-      - php
-    ports:
-      - "80:80"
+  app:
+    build: docker
     volumes:
-      - ./src/public:/var/www/public
-  php:
-    container_name: php
-    build: docker/php
-    volumes:
-      - ./src:/var/www
-    working_dir: /var/www
-    command: php-fpm
+      - .:/app:delegated
+      - ./docker/supervisor.conf.d/:/etc/supervisor/conf.d
+      - ./docker/nginx.default.conf:/etc/nginx/conf.d/default.conf
+    working_dir: /app
     ports:
-      - "9000:9000"
-    env_file:
-      - .php.env
+      - "8000:80"
+#      - "9000:9000"
+#      - "9003:9003"
+    environment:
+      - XDEBUG=1
+      - XDEBUG_DEFAULT_ENABLE=1
+      - XDEBUG_REMOTE_ENABLE=1
+      - XDEBUG_REMOTE_HOST=host.docker.internal
+      - XDEBUG_REMOTE_PORT=9003
+      - XDEBUG_REMOTE_AUTO_START=0
+      - XDEBUG_REMOTE_CONNECT_BACK=0
+      - XDEBUG_IDEKEY=PHPSTORM
+      - PHP_IDE_CONFIG=serverName=app
+      - PHP_XDEBUG_ENABLED=1
