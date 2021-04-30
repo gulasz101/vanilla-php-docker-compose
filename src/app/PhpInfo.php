@@ -16,5 +16,6 @@ class PhpInfo
     public static function run(): void
     {
         phpinfo();
+        xdebug_info();
     }
 }
