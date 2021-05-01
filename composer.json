@@ -22,6 +22,9 @@
         "phpstan/phpstan": "^0.12.85",
         "rector/rector": "^0.10.16"
     },
+    "config": {
+        "platform-check": false
+    },
     "scripts": {
         "xdebug-disable": [
             "if [ -f /.dockerenv ] && [ \"\" != \"$(php -m | grep -i xdebug 2>&1)\" ] ; then rm -f /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && echo OK ; fi"
