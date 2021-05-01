@@ -63,6 +63,14 @@
             "@xdebug-disable",
             "vendor/bin/phpunit",
             "@xdebug-enable"
+        ],
+        "quality-checks": [
+            "@xdebug-disable",
+            "vendor/bin/parallel-lint --exclude vendor .",
+            "vendor/bin/ecs check src tests",
+            "vendor/bin/rector process src tests --dry-run",
+            "vendor/bin/phpstan analyse",
+            "@xdebug-enable"
         ]
     }
 }
