@@ -24,6 +24,9 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     $services->set(\Rector\EarlyReturn\Rector\If_\ChangeAndIfToEarlyReturnRector::class);
     $services->set(\Rector\EarlyReturn\Rector\If_\ChangeIfElseValueAssignToEarlyReturnRector::class);
 
+    // 7.1
+    $services->set(\Rector\Php71\Rector\ClassConst\PublicConstantVisibilityRector::class);
+
     // 7.2
     $services->set(\Rector\Php72\Rector\FuncCall\StringifyDefineRector::class);
 
