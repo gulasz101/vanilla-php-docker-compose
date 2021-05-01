@@ -54,6 +54,11 @@
             "vendor/bin/rector process src tests",
             "@xdebug-enable"
         ],
+        "php-lint": [
+            "@xdebug-disable",
+            "vendor/bin/parallel-lint --exclude vendor .",
+            "@xdebug-enable"
+        ],
         "test": [
             "@xdebug-disable",
             "vendor/bin/phpunit",
