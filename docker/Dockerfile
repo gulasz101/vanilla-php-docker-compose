@@ -20,19 +20,25 @@ RUN apt update && apt install -y \
     gnupg2 \
     gnupg1 \
     nginx \
-    supervisor
+    supervisor \
+    libicu-dev
 
 # Install PECL extensions
 RUN \
     pecl install xdebug \
     && docker-php-ext-enable xdebug
 
+# Configure intl extension
+RUN \
+    docker-php-ext-configure intl
+
 # install mysql support
 RUN \
     docker-php-ext-install \
         mysqli \
         pdo \
-        pdo_mysql
+        pdo_mysql \
+        intl
 
 # install composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
