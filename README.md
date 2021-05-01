@@ -5,15 +5,15 @@ Includes:
 - ***xdebug 3*** -> phpstorm server name -> **app**, root dir has to be mapped to **/app**;
 - it is build on top of ***php:8.0-fpm*** image
 - ***symfony/var-dumper*** if xdebug is not a solution;
-- ***phpunit/phpunit*** -> to execute simply run `composer test` from within container;
+- ***phpunit/phpunit*** -> to execute simply run `composer test` from the container;
 - ***php-parallel-lint/php-parallel-lint*** for basic linting problems -> to execute simply run `composer php-lint`
-  from within container;
+  from the container;
 - ***symplify/easy-coding-standard*** for quality check -> to execute simply run `composer ecs-check` from within
   container;
 - ***phpstan/phpstan*** for more advanced code problems check -> to execute simply run `composer phpstan` from
   within container;
 - ***rector/rector*** to keep code upgraded to latest and greatest standards -> to execute simply
-  run `composer rector-dry-run` from within container;
+  run `composer rector-dry-run` from the container;
 
 Also includes **supervisor**, this way inside php-fpm standard image we have nginx running as well. Details of
 supervisor programs are inside of `./docker/supervisor.conf.d/` config files.
