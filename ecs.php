@@ -36,5 +36,5 @@ return static function (ContainerConfigurator $containerConfigurator): void {
 	$parameters->set(Option::INDENTATION, 'tab');
 
 	// [default: PHP_EOL]; other options: "\n"
-     $parameters->set(Option::LINE_ENDING, "\r\n");
+    // $parameters->set(Option::LINE_ENDING, "\r\n");
 };
