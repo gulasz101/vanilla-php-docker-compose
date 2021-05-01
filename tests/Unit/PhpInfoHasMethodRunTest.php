@@ -13,8 +13,8 @@ use TestCase;
  */
 class PhpInfoHasMethodRunTest extends TestCase
 {
-    public function testPositive(): void
-    {
-        $this->assertTrue(method_exists(new PhpInfo(), 'run'));
-    }
+	public function testPositive(): void
+	{
+		$this->assertTrue(method_exists(new PhpInfo(), 'run'));
+	}
 }

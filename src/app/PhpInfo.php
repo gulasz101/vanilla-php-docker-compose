@@ -10,12 +10,12 @@ namespace App;
  */
 class PhpInfo
 {
-    /**
-     * Just run phpinfo
-     */
-    public static function run(): void
-    {
-        phpinfo();
-        xdebug_info();
-    }
+	/**
+	 * Just run phpinfo
+	 */
+	public static function run(): void
+	{
+		phpinfo();
+		xdebug_info();
+	}
 }
