@@ -31,12 +31,12 @@
         ],
         "ecs-fix": [
             "@xdebug-disable",
-            "vendor/bin/ecs check --fix",
+            "vendor/bin/ecs check src tests --fix",
             "@xdebug-enable"
         ],
-        "ecs-fix-dry-run": [
+        "ecs-check": [
             "@xdebug-disable",
-            "vendor/bin/ecs check",
+            "vendor/bin/ecs check src tests",
             "@xdebug-enable"
         ],
         "phpstan" : [
