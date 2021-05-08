@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8bcd53eab8843a7813080b61364a4815",
+    "content-hash": "bb8ba246616a4291910a457283fdba9f",
     "packages": [],
     "packages-dev": [
         {
@@ -600,6 +600,75 @@
             "time": "2020-05-25T17:44:05+00:00"
         },
         {
+            "name": "ergebnis/json-printer",
+            "version": "3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ergebnis/json-printer.git",
+                "reference": "e4190dadd9937a77d8afcaf2b6c42a528ab367d6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ergebnis/json-printer/zipball/e4190dadd9937a77d8afcaf2b6c42a528ab367d6",
+                "reference": "e4190dadd9937a77d8afcaf2b6c42a528ab367d6",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "ergebnis/license": "^1.0.0",
+                "ergebnis/php-cs-fixer-config": "^2.2.1",
+                "ergebnis/phpstan-rules": "~0.15.2",
+                "ergebnis/test-util": "^1.1.0",
+                "infection/infection": "~0.15.3",
+                "phpstan/extension-installer": "^1.0.4",
+                "phpstan/phpstan": "~0.12.40",
+                "phpstan/phpstan-deprecation-rules": "~0.12.5",
+                "phpstan/phpstan-phpunit": "~0.12.16",
+                "phpstan/phpstan-strict-rules": "~0.12.4",
+                "phpunit/phpunit": "^8.5.8",
+                "psalm/plugin-phpunit": "~0.11.0",
+                "vimeo/psalm": "^3.14.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ergebnis\\Json\\Printer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Möller",
+                    "email": "am@localheinz.com"
+                }
+            ],
+            "description": "Provides a JSON printer, allowing for flexible indentation.",
+            "homepage": "https://github.com/ergebnis/json-printer",
+            "keywords": [
+                "formatter",
+                "json",
+                "printer"
+            ],
+            "support": {
+                "issues": "https://github.com/ergebnis/json-printer/issues",
+                "source": "https://github.com/ergebnis/json-printer"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/localheinz",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-08-30T12:17:03+00:00"
+        },
+        {
             "name": "friendsofphp/php-cs-fixer",
             "version": "v3.0.0",
             "source": {
@@ -686,6 +755,49 @@
                 }
             ],
             "time": "2021-05-03T21:51:58+00:00"
+        },
+        {
+            "name": "idiosyncratic/editorconfig",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/idiosyncratic-code/editorconfig-php.git",
+                "reference": "50f742daee8b7a632b795f5927d8d88c43dd3a4f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/idiosyncratic-code/editorconfig-php/zipball/50f742daee8b7a632b795f5927d8d88c43dd3a4f",
+                "reference": "50f742daee8b7a632b795f5927d8d88c43dd3a4f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "idiosyncratic/devtools": "^0.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Idiosyncratic\\EditorConfig\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "ISC"
+            ],
+            "authors": [
+                {
+                    "name": "Jason Silkey",
+                    "email": "jason@jasonsilkey.com"
+                }
+            ],
+            "description": "PHP implementation of EditorConfig",
+            "support": {
+                "issues": "https://github.com/idiosyncratic-code/editorconfig-php/issues",
+                "source": "https://github.com/idiosyncratic-code/editorconfig-php/tree/0.1.1"
+            },
+            "time": "2021-05-03T15:39:40+00:00"
         },
         {
             "name": "jean85/pretty-package-versions",
@@ -1708,16 +1820,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.86",
+            "version": "0.12.85",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "a84fdc53ecca7643dbc89ef8880d8b393a6c155a"
+                "reference": "20e6333c0067875ad7697cd8acdf245c6ef69d03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/a84fdc53ecca7643dbc89ef8880d8b393a6c155a",
-                "reference": "a84fdc53ecca7643dbc89ef8880d8b393a6c155a",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/20e6333c0067875ad7697cd8acdf245c6ef69d03",
+                "reference": "20e6333c0067875ad7697cd8acdf245c6ef69d03",
                 "shasum": ""
             },
             "require": {
@@ -1748,7 +1860,7 @@
             "description": "PHPStan - PHP Static Analysis Tool",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/0.12.86"
+                "source": "https://github.com/phpstan/phpstan/tree/0.12.85"
             },
             "funding": [
                 {
@@ -1764,7 +1876,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-08T11:29:01+00:00"
+            "time": "2021-04-27T14:13:16+00:00"
         },
         {
             "name": "phpstan/phpstan-phpunit",
@@ -2491,48 +2603,101 @@
             "time": "2017-10-23T01:57:42+00:00"
         },
         {
-            "name": "rector/rector",
-            "version": "0.10.18",
+            "name": "rector/extension-installer",
+            "version": "0.10.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/rectorphp/rector.git",
-                "reference": "21bf53f2ec4a8e686f8cc437e7379eade99c0705"
+                "url": "https://github.com/rectorphp/extension-installer.git",
+                "reference": "56c97630fca170b5586b2f08e76348f924ebb8dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/21bf53f2ec4a8e686f8cc437e7379eade99c0705",
-                "reference": "21bf53f2ec4a8e686f8cc437e7379eade99c0705",
+                "url": "https://api.github.com/repos/rectorphp/extension-installer/zipball/56c97630fca170b5586b2f08e76348f924ebb8dd",
+                "reference": "56c97630fca170b5586b2f08e76348f924ebb8dd",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.1 || ^2.0",
+                "php": "^7.3 || ^8.0"
+            },
+            "require-dev": {
+                "composer/composer": "^2.0",
+                "composer/xdebug-handler": "2.0 as 1.4",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "jangregor/phpstan-prophecy": "^0.8.1",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpstan/extension-installer": "^1.1",
+                "phpunit/phpunit": "^9.5",
+                "rector/rector-phpstan-rules": "^0.1",
+                "symplify/easy-coding-standard": "^9.3.1",
+                "symplify/phpstan-extensions": "^9.3",
+                "symplify/phpstan-rules": "^9.3"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Rector\\RectorInstaller\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Rector\\RectorInstaller\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Composer plugin for automatic installation of Rector extensions",
+            "support": {
+                "issues": "https://github.com/rectorphp/extension-installer/issues",
+                "source": "https://github.com/rectorphp/extension-installer/tree/0.10.2"
+            },
+            "time": "2021-05-06T21:14:19+00:00"
+        },
+        {
+            "name": "rector/rector",
+            "version": "0.10.20",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rectorphp/rector.git",
+                "reference": "6ddb1451c8f8e6562a09c3a38d1df9492f01c85f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/6ddb1451c8f8e6562a09c3a38d1df9492f01c85f",
+                "reference": "6ddb1451c8f8e6562a09c3a38d1df9492f01c85f",
                 "shasum": ""
             },
             "require": {
                 "composer/semver": "^3.2",
-                "composer/xdebug-handler": "^1.4|^2.0",
+                "composer/xdebug-handler": "^1.3|^2.0",
                 "danielstjules/stringy": "^3.1",
                 "doctrine/inflector": "^2.0",
+                "ergebnis/json-printer": "^3.1",
                 "ext-dom": "*",
                 "ext-json": "*",
+                "idiosyncratic/editorconfig": "^0.1.0",
                 "jean85/pretty-package-versions": "^1.6",
                 "nette/caching": "^3.1",
-                "nette/robot-loader": "^3.4",
                 "nette/utils": "^3.2",
                 "nikic/php-parser": "4.10.4",
                 "php": "^7.3|^8.0",
                 "phpstan/phpdoc-parser": "^0.5.4",
-                "phpstan/phpstan": "^0.12.83",
+                "phpstan/phpstan": "0.12.85",
                 "phpstan/phpstan-phpunit": "^0.12.18",
+                "rector/extension-installer": "^0.10.2",
                 "rector/rector-cakephp": "^0.10.4",
                 "rector/rector-doctrine": "^0.10.6",
-                "rector/rector-installer": "^0.10.0",
                 "rector/rector-laravel": "^0.10.2",
-                "rector/rector-nette": "^0.10.8",
+                "rector/rector-nette": "^0.10.9",
+                "rector/rector-nette-to-symfony": "^0.10.0",
                 "rector/rector-phpunit": "^0.10.8",
                 "rector/rector-symfony": "^0.10.5",
                 "sebastian/diff": "^4.0.4",
+                "shanethehat/pretty-xml": "^1.0",
                 "symfony/console": "^4.4.8|^5.1",
                 "symfony/dependency-injection": "^5.1",
                 "symfony/finder": "^4.4.8|^5.1",
                 "symfony/http-kernel": "^4.4.8|^5.1",
-                "symfony/process": "^4.4.8|^5.1",
                 "symplify/astral": "^9.3",
                 "symplify/autowire-array-parameter": "^9.3",
                 "symplify/console-color-diff": "^9.3",
@@ -2550,10 +2715,6 @@
                 "rector/rector-prefixed": "self.version"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.18.6",
-                "nette/application": "^3.0.7",
-                "nette/di": "^3.0",
-                "nette/forms": "^3.0",
                 "phpstan/extension-installer": "^1.1",
                 "phpstan/phpstan-nette": "^0.12.16",
                 "phpunit/phpunit": "^9.5",
@@ -2586,36 +2747,19 @@
                     "Rector\\Compiler\\": "utils/compiler/src"
                 },
                 "files": [
-                    "src/functions/node_helper.php"
+                    "src/functions/node_helper.php",
+                    "src/constants.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "authors": [
-                {
-                    "name": "Tomas Votruba",
-                    "email": "tomas.vot@gmail.com",
-                    "homepage": "https://tomasvotruba.com"
-                },
-                {
-                    "name": "Jan Mikes",
-                    "email": "j.mikes@me.com",
-                    "homepage": "https://janmikes.cz"
-                }
-            ],
             "description": "Instant upgrade and refactoring of your PHP code",
             "homepage": "https://getrector.org",
-            "keywords": [
-                "ast",
-                "automated refactoring",
-                "instant refactoring",
-                "instant upgrades"
-            ],
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
-                "source": "https://github.com/rectorphp/rector/tree/0.10.18"
+                "source": "https://github.com/rectorphp/rector/tree/0.10.20"
             },
             "funding": [
                 {
@@ -2623,7 +2767,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-05-03T21:27:20+00:00"
+            "time": "2021-05-07T14:02:04+00:00"
         },
         {
             "name": "rector/rector-cakephp",
@@ -2738,58 +2882,6 @@
             "time": "2021-04-24T12:17:00+00:00"
         },
         {
-            "name": "rector/rector-installer",
-            "version": "0.10.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/rectorphp/extension-installer.git",
-                "reference": "56c97630fca170b5586b2f08e76348f924ebb8dd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/extension-installer/zipball/56c97630fca170b5586b2f08e76348f924ebb8dd",
-                "reference": "56c97630fca170b5586b2f08e76348f924ebb8dd",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.1 || ^2.0",
-                "php": "^7.3 || ^8.0"
-            },
-            "require-dev": {
-                "composer/composer": "^2.0",
-                "composer/xdebug-handler": "2.0 as 1.4",
-                "friendsofphp/php-cs-fixer": "^3.0",
-                "jangregor/phpstan-prophecy": "^0.8.1",
-                "phpspec/prophecy-phpunit": "^2.0",
-                "phpstan/extension-installer": "^1.1",
-                "phpunit/phpunit": "^9.5",
-                "rector/rector-phpstan-rules": "^0.1",
-                "symplify/easy-coding-standard": "^9.3.1",
-                "symplify/phpstan-extensions": "^9.3",
-                "symplify/phpstan-rules": "^9.3"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "Rector\\RectorInstaller\\Plugin"
-            },
-            "autoload": {
-                "psr-4": {
-                    "Rector\\RectorInstaller\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Composer plugin for automatic installation of Rector extensions",
-            "support": {
-                "issues": "https://github.com/rectorphp/extension-installer/issues",
-                "source": "https://github.com/rectorphp/extension-installer/tree/0.10.2"
-            },
-            "abandoned": "rector/extension-installer",
-            "time": "2021-05-06T21:14:19+00:00"
-        },
-        {
             "name": "rector/rector-laravel",
             "version": "0.10.2",
             "source": {
@@ -2847,22 +2939,22 @@
         },
         {
             "name": "rector/rector-nette",
-            "version": "0.10.9",
+            "version": "0.10.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector-nette.git",
-                "reference": "19c85c870f9a7a90d1f2e9be9b3e048b4db69697"
+                "reference": "e9f0de1ffb3ba1eecdaa281fcd64fda1d3515e6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector-nette/zipball/19c85c870f9a7a90d1f2e9be9b3e048b4db69697",
-                "reference": "19c85c870f9a7a90d1f2e9be9b3e048b4db69697",
+                "url": "https://api.github.com/repos/rectorphp/rector-nette/zipball/e9f0de1ffb3ba1eecdaa281fcd64fda1d3515e6f",
+                "reference": "e9f0de1ffb3ba1eecdaa281fcd64fda1d3515e6f",
                 "shasum": ""
             },
             "require": {
                 "ext-xml": "*",
                 "php": ">=7.3",
-                "rector/rector": "^0.10.12"
+                "rector/rector": "^0.10.19"
             },
             "conflict": {
                 "rector/rector": "<=0.10.3"
@@ -2872,13 +2964,14 @@
                 "nette/di": "^3.0",
                 "nette/forms": "3.0.*",
                 "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan": "^0.12.85",
                 "phpstan/phpstan-nette": "^0.12.16",
                 "phpunit/phpunit": "^9.5",
-                "rector/rector-phpstan-rules": "^0.1",
-                "symplify/easy-coding-standard": "^9.2",
-                "symplify/phpstan-extensions": "^9.2",
-                "symplify/phpstan-rules": "^9.2",
-                "symplify/rule-doc-generator": "^9.2"
+                "rector/rector-phpstan-rules": "^0.2",
+                "symplify/easy-coding-standard": "^9.3",
+                "symplify/phpstan-extensions": "^9.3",
+                "symplify/phpstan-rules": "^9.3",
+                "symplify/rule-doc-generator": "^9.3"
             },
             "type": "rector-extension",
             "extra": {
@@ -2903,9 +2996,71 @@
             "description": "Rector upgrades rules for Nette Framework",
             "support": {
                 "issues": "https://github.com/rectorphp/rector-nette/issues",
-                "source": "https://github.com/rectorphp/rector-nette/tree/0.10.9"
+                "source": "https://github.com/rectorphp/rector-nette/tree/0.10.10"
             },
-            "time": "2021-04-26T10:35:59+00:00"
+            "time": "2021-05-06T23:55:02+00:00"
+        },
+        {
+            "name": "rector/rector-nette-to-symfony",
+            "version": "0.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rectorphp/rector-nette-to-symfony.git",
+                "reference": "27be9cb982ac7ad3799e0ac7fd45be0a46d7fb0b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rectorphp/rector-nette-to-symfony/zipball/27be9cb982ac7ad3799e0ac7fd45be0a46d7fb0b",
+                "reference": "27be9cb982ac7ad3799e0ac7fd45be0a46d7fb0b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3",
+                "rector/rector": "^0.10.19",
+                "rector/rector-nette": "^0.10.9"
+            },
+            "require-dev": {
+                "nette/application": "^3.1",
+                "nette/forms": "^3.1",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan-nette": "^0.12.16",
+                "phpunit/phpunit": "^9.5",
+                "rector/rector-phpstan-rules": "^0.1",
+                "symfony/form": "^5.2",
+                "symplify/easy-coding-standard": "^9.3",
+                "symplify/phpstan-extensions": "^9.3",
+                "symplify/phpstan-rules": "^9.3",
+                "symplify/rule-doc-generator": "^9.3"
+            },
+            "type": "rector-extension",
+            "extra": {
+                "rector": {
+                    "includes": [
+                        "config/config.php"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Rector\\NetteToSymfony\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Generate Rector rules from command line",
+            "support": {
+                "issues": "https://github.com/rectorphp/rector-nette-to-symfony/issues",
+                "source": "https://github.com/rectorphp/rector-nette-to-symfony/tree/0.10.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/tomasvotruba",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-05-05T21:07:31+00:00"
         },
         {
             "name": "rector/rector-phpunit",
@@ -3986,6 +4141,53 @@
                 }
             ],
             "time": "2020-09-28T06:39:44+00:00"
+        },
+        {
+            "name": "shanethehat/pretty-xml",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/shanethehat/pretty-xml.git",
+                "reference": "2b063c6544c8dc9563c53cb72eb06d1d74c9e75f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/shanethehat/pretty-xml/zipball/2b063c6544c8dc9563c53cb72eb06d1d74c9e75f",
+                "reference": "2b063c6544c8dc9563c53cb72eb06d1d74c9e75f",
+                "shasum": ""
+            },
+            "require-dev": {
+                "behat/behat": "~3.0",
+                "bossa/phpspec2-expect": "*",
+                "phpspec/phpspec": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "PrettyXml": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Shane Auckland",
+                    "email": "shane.auckland@gmail.com",
+                    "homepage": "http://shaneauckland.co.uk"
+                }
+            ],
+            "description": "Library for pretty-printing XML",
+            "keywords": [
+                "pretty",
+                "xml"
+            ],
+            "support": {
+                "issues": "https://github.com/shanethehat/pretty-xml/issues",
+                "source": "https://github.com/shanethehat/pretty-xml/tree/master"
+            },
+            "time": "2015-08-10T14:22:54+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
