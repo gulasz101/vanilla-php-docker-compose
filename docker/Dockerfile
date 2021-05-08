@@ -21,12 +21,13 @@ RUN apt update && apt install -y \
     gnupg1 \
     nginx \
     supervisor \
-    libicu-dev
+    libicu-dev \
+    gettext
 
 # Install PECL extensions
 RUN \
-    pecl install xdebug \
-    && docker-php-ext-enable xdebug
+    pecl install xdebug
+#    && docker-php-ext-enable xdebug
 
 # Configure intl extension
 RUN \
@@ -38,7 +39,12 @@ RUN \
         mysqli \
         pdo \
         pdo_mysql \
-        intl
+        intl \
+        pcntl
+
+RUN \
+     pecl install redis \
+     && docker-php-ext-enable redis
 
 # install composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
